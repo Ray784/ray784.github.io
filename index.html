@@ -28,6 +28,9 @@
                 font-family: 'Bellota';
                 padding: 40px;
             }
+            html {
+              scroll-behavior: smooth;
+            }
             img{
                 height: 250px;
                 width: 400px;
@@ -78,241 +81,282 @@
         </style>
 	</head>
 	<body>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/port-ss.jpg"><br>	
-                    <b>Portfolio</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://abhaybhat.me/portfolio">Click here!</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse left" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-item nav-link" href="#android">Android Releases</a>
+                    <a class="nav-item nav-link" href="#gitpages">Github Pages</a>
+                    <a class="nav-item nav-link" href="#interns">Internships and Others</a>
+                    <a class="nav-item nav-link" href="#hackathon">Hackathon</a>
+                    <a class="nav-item nav-link" href="#curicullum">Curicullum</a>
+                    <a class="nav-item nav-link" href="#side">Side Projects</a>
                 </div>
             </div>
-        </div>
+        </nav>
+        <section id="portfolio">
+            <br>
+            <br>
+            <br>
+            <b>Portfolio</b><hr>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/port-ss.jpg"><br>	
+                        <b>Portfolio</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://abhaybhat.me/portfolio">Click here!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <hr>
-        <b>Android Releases</b>
-        <hr>
-        <div class="card-android">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/ttt-ss.png" class="android"><br>
-                    <b>Tic Tac Toe</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/tic_tac_toe/releases">Click here!</a>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/paint-ss.png"><br>
-                    <b>Paint</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/paint/releases">Click here!</a>
+        <section id="android">
+            <br>
+            <br>
+            <hr>
+            <b>Android Releases</b>
+            <hr>
+            <div class="card-android">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/ttt-ss.png" class="android"><br>
+                        <b>Tic Tac Toe</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/tic_tac_toe/releases">Click here!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="card-android">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/calci-ss.png" class="android"><br>
-                    <b>Calculator</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/calculator/releases">Click here!</a>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-        <b>Github Pages</b>
-        <hr>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/ttt-gp-ss.png" class="gitpages"><br>
-                    <b>Tic Tac Toe</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://ray784.github.io/tic_tac_toe">Click here!</a>
+            <br>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/paint-ss.png"><br>
+                        <b>Paint</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/paint/releases">Click here!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/hdp-win-gp-ss.png" class="gitpages"><br>
-                    <b>Hadoop on windows</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://ray784.github.io/hadoop_windows">Click here!</a>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/calci-gp-ss.png" class="gitpages"><br>
-                    <b>Calculator</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://ray784.github.io/calculator">Click here!</a>
+            <br>
+            <div class="card-android">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/calci-ss.png" class="android"><br>
+                        <b>Calculator</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/calculator/releases">Click here!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr>
-        <b>Internships and Others</b>
-        <hr>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/default.png" class="default"><br>
-                    <b>Quiz App</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/QuizApp">Click here!</a>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/quest.png" class="default"><br>
-                    <b>Quest-2k19</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/quest_website">Click here!</a>
+        </section>
+        <section id="gitpages">
+            <br>
+            <br>
+            <hr>
+            <b>Github Pages</b>
+            <hr>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/ttt-gp-ss.png" class="gitpages"><br>
+                        <b>Tic Tac Toe</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://ray784.github.io/tic_tac_toe">Click here!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr>
-        <b>Hackathon</b>
-        <hr>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/nasa.png" class="default"><br>
-                    <b>Disaster awareness application - Nasa Space apps Hackathon</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/nasa_spaceapps">Click here!</a>
+            <br>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/hdp-win-gp-ss.png" class="gitpages"><br>
+                        <b>Hadoop on windows</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://ray784.github.io/hadoop_windows">Click here!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <hr>
-        <b>Curicullum - Labs</b>
-        <hr>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/default.png" class="default"><br>
-                    <b>Event management system</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/event_management">Click here!</a>
+            <br>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/calci-gp-ss.png" class="gitpages"><br>
+                        <b>Calculator</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://ray784.github.io/calculator">Click here!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/default.png" class="default"><br>
-                    <b>Project mate</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/Project-Mate">Click here!</a>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/datamining.png" class="default"><br>
-                    <b>Data mining algorithms</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/DMDW">Click here!</a>
+        </section>
+        <section id="interns">
+            <br>
+            <br>
+            <hr>
+            <b>Internships and Others</b>
+            <hr>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/default.png" class="default"><br>
+                        <b>Quiz App</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/QuizApp">Click here!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/crypt-ss.jpg" class="default"><br>
-                    <b>Cryptography Algorihms</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/CryptAlgo">Click here!</a>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/default.png" class="default"><br>
-                    <b>Exploring feature reduction techniques for Indic scripts</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/mini_project">Click here!</a>
+            <br>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/quest.png" class="default"><br>
+                        <b>Quest-2k19</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/quest_website">Click here!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <hr>
-        <b>Side Projects</b>
-        <hr>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/cal-java.png" style="width: 350px;"><br>
-                    <b>Calculator using Java</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/java-calculator">Click here!</a>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/gate-ss.png" class="gitpages"><br>
-                    <b>CSIT - GATE 2020 Score calculator with official key.</b> 
-                </div>
-                <div class="col-md">
-                  	<a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/Gate2020-Score">Click here!</a>
-                  	<br><br>
-                    <a class="btn btn-success" target="_blank" href="https://gate-2020.herokuapp.com/">Deployment</a>
+        </section>
+        <section id="hackathon">
+            <br>
+            <br>
+            <hr>
+            <b>Hackathon</b>
+            <hr>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/nasa.png" class="default"><br>
+                        <b>Disaster awareness application - Nasa Space apps Hackathon</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/nasa_spaceapps">Click here!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="card">
-            <div class="row">
-                <div class="col-md">
-                    <img src="./imgs/default.png" class="default"><br>
-                    <b>Extracting english words by crawling wikipedia</b> 
-                </div>
-                <div class="col-md">
-                    <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/english-words">Click here!</a>
+        </section>
+        <section id="curicullum">
+            <br>
+            <br>
+            <hr>
+            <b>Curicullum - Labs</b>
+            <hr>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/default.png" class="default"><br>
+                        <b>Event management system</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/event_management">Click here!</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        
+            <br>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/default.png" class="default"><br>
+                        <b>Project mate</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/Project-Mate">Click here!</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/datamining.png" class="default"><br>
+                        <b>Data mining algorithms</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/DMDW">Click here!</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/crypt-ss.jpg" class="default"><br>
+                        <b>Cryptography Algorihms</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/CryptAlgo">Click here!</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/default.png" class="default"><br>
+                        <b>Exploring feature reduction techniques for Indic scripts</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/mini_project">Click here!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="side">
+            <br>
+            <br>
+            <hr>
+            <b>Side Projects</b>
+            <hr>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/cal-java.png" style="width: 350px;"><br>
+                        <b>Calculator using Java</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/java-calculator">Click here!</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/gate-ss.png" class="gitpages"><br>
+                        <b>CSIT - GATE 2020 Score calculator with official key.</b> 
+                    </div>
+                    <div class="col-md">
+                      	<a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/Gate2020-Score">Click here!</a>
+                      	<br><br>
+                        <a class="btn btn-success" target="_blank" href="https://gate-2020.herokuapp.com/">Deployment</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md">
+                        <img src="./imgs/default.png" class="default"><br>
+                        <b>Extracting english words by crawling wikipedia</b> 
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-success click" target="_blank" href="https://github.com/Ray784/english-words">Click here!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
